@@ -1,17 +1,16 @@
 var express = require('express');
 
-var port = process.env.PORT || 8086;
-var date = new Date();
+var port = process.env.PORT || 8081;
 
 var app = express();
 app.use(express.static('public'));
 
 app.get("/", function(req,res){
-		res.sendFile('index.html')
+		res.sendFile(`${__dirname}/public/launchpad.html`)
 });
 
 app.get("/launchpad", function(req,res){
-	res.sendFile('launchpad.html')
+	res.sendFile(`${__dirname}/public/launchpad.html`)
 });
 
 app.get("/example", function(req,res){

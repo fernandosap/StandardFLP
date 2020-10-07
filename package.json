@@ -1,0 +1,24 @@
+{
+  "name": "standardflp",
+  "version": "1.0.0",
+  "description": "Application to create a simple FioriLaunchpad based on Fiori Fundamental Library",
+  "main": "StandardFLP.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node StandardFLP.js",
+    "start": "node StandardFLP.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandosap/StandardFLP.git"
+  },
+  "author": "FSL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandosap/StandardFLP/issues"
+  },
+  "homepage": "https://github.com/fernandosap/StandardFLP#readme"
+}
