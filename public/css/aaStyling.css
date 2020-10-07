@@ -1,0 +1,410 @@
+.aaShellbarSpacing {
+	margin-right: 20px;
+}
+
+.aaMarquee {
+	background:#7c99b6;
+	color:white;
+	box-shadow: 0px 2px 2px 2px rgba(80, 80, 80, 0.05);
+}
+
+.invis {
+	display: none;
+}
+
+.fadeaway {
+	animation-timing-function: ease-out;
+	webkit-animation: fadeOut 1s; /* Safari 4.0 - 8.0 */
+	animation: fadeout 1s;
+	animation-delay: 3.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;	
+}
+
+.aaNotificationFloat {
+	z-index: 3;
+	position: absolute;
+	right: -710px;
+	top: 79px;
+	width: 700px;
+	animation-timing-function: ease-out;
+	webkit-animation: mymove 1s; /* Safari 4.0 - 8.0 */
+	animation: mymove 1s;
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {right: -710px;}
+  to {right: 10px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {right: -710px;}
+  to {right: 10px;}
+}
+
+.sectionTitles {
+	margin-left: 5%;
+}
+
+.fioriTileContainer {
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 24px;
+	margin-bottom: 48px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.aaFioriTile {
+	position: relative;
+	width: 176px;
+	height: 176px;
+	background: white;
+	margin: 2px;
+	border-radius: 4px;
+	border-color: #caccce;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0px 0px 3px 3px rgba(80, 80, 80, 0.05);
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+
+.aaFioriTileTitle {
+	font-size: 16px;
+	color: black;
+}
+
+.aaFioriTileSubtitle {
+	font-size: 14px;
+	color: #6a6d70;
+	margin-top: 8px;
+	text-overflow: ellipsis;
+}
+
+.aaFioriTileLogo {
+	font-size: 14px;
+	color: #6a6d70;
+	margin-top: 8px;
+	position: absolute;
+	bottom: 48px;
+}
+
+.aaFioriTileLogoWithKPI {
+	font-size: 36px;
+	font-weight: bold;
+	color: #6a6d70;
+	margin-top: 8px;
+	position: absolute;
+	bottom: 36px;
+	right: 15px;
+}
+
+.aaFioriTileContext {
+	font-size: 14px;
+	color: #6a6d70;
+	position: absolute;
+	bottom: 16px;
+}
+
+.aaContentDiv {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+
+.zAdjustment {
+	z-index: 40;
+}
+
+.centerText {
+	text-align: center;
+	opacity: 1;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+/* Standard syntax */
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.left70 {
+	overflow: hidden;
+    min-height: 50px;
+}
+
+.right30 {
+	float: right;
+    width: 30%;
+    min-height: 50px;
+    margin-left: 0px;
+}
+
+.newRight70 {
+	float: right;
+    width: 70%;
+    height: 80%;
+    min-height: 50px;
+    margin-left: 0px;
+}
+
+.card {
+	width: 96%;
+	height: 60%;
+	background: #fff;
+	box-shadow: 0px 0px 4px 2px #e8e8e8;
+	float: left;
+	margin-top: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 18px;
+}
+
+.crmDataCard {
+	width: 96%;
+	height: auto;
+	background: #fff;
+	box-shadow: 0px 0px 4px 2px #e8e8e8;
+	float: left;
+	margin-top: 12px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 2.5%;
+}
+
+.colourBar {
+	height:4px;
+	background: linear-gradient(270deg, #EFAD01, #1EB2E7, #C526D1);
+	background-size: 100% 100%;
+}
+
+.animations {
+	-webkit-animation: Gradient 3s ease infinite;
+	-moz-animation: Gradient 3s ease infinite;
+	animation: Gradient 3s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-moz-keyframes Gradient {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@keyframes Gradient { 
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+
+.columnFlexHolder {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.popUpCard {
+	padding: 16px;
+}
+
+.columnFlexItem {
+	
+}
+
+.suggestionsCard {
+	width: 96%;
+	height: auto;
+	background: #fff;
+	box-shadow: 0px 0px 4px 2px #e8e8e8;
+	float: left;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 18px;
+}
+
+.treePane {
+	padding: 16px;
+}
+
+.card20 {
+	width: 20%;
+	height: 330px;
+	background: #fff;
+	box-shadow: 0px 0px 4px 2px #e8e8e8;
+	float: left;
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 28;
+	margin-bottom: 2%;
+}
+
+.card60 {
+	width: 60%;
+	height: 330px;
+	background: #fff;
+	box-shadow: 0px 0px 4px 2px #e8e8e8;
+	float: left;
+	margin-top: 2%;
+	margin-left: 8%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+.cardInner {
+	padding: 16px;
+}
+
+.cardInnerLeft{
+	padding: 16px;
+	width: 50%;
+	float: none;
+}
+
+.cardInnerRight {
+	padding:16px;
+	width: 50%;
+	float:right;
+}
+
+.tabInner{
+	padding-left:16px;
+	padding-right:16px;
+	padding-top:16px;
+	background: #f8f8f8;
+	height: 50%;
+}
+
+.aaPanel {
+	background: #f8f8f8;
+}
+
+.aaTabs {
+	box-shadow: 0 -5px 5px 0px #e8e8e8;
+	background: #f8f8f8;
+	border-bottom: 1px solid #caccce;
+	margin-bottom: 0px;
+}
+
+.crmCardTopHalf {
+	height: auto;
+}
+
+.crmCardMid {
+	height: 52px;
+}
+
+.crmCardBottomHalf {
+	height: auto;
+	background: #f8f8f8;
+	overflow: scroll;
+}
+
+.panelDetail {
+	padding: 16px;
+}
+
+.insetHeader {
+	padding-top: 16px;
+	padding-left: 16px;
+	margin-bottom: 8px;
+}
+
+.aaButton {
+	margin-right: 24px;
+}
+
+.invis {
+	display: none;
+}
+
+.vis {
+	display: block;
+}
+
+.centerBars {
+	display: flex;
+	justify-content: center;
+}
+
+.progressTrackerContainer {
+	width: 52px;
+	height: 300px;
+	padding-top: 8px;
+	border-style: solid;
+	border-width: 1px;
+	position:relative;
+	border-radius: 5px;
+}
+
+.trophyDisplay {
+	height: 50px;
+    position: absolute;
+    right:-60px;
+    bottom: -3px;
+    padding:5px 10px;
+}
+
+.trophyImg {
+	height: 50px;
+}
+
+.flagImg {
+	width: 100%;
+}
+
+.statusIcons {
+	height: 40px;
+}
+
+#progressBar {
+    width: 46px;
+    height: 0px;
+    margin: 2px;
+    border-radius: 3px;
+    background: red;
+	-webkit-transition: height 1.4s ease;
+	-moz-transition: height 1.4s ease;
+	-o-transition: height 1.4s ease;
+	transition: height 1.4s ease;
+	position: absolute;
+	bottom: 0;
+}
+
+
+#progressBar_IRL {
+    width: 46px;
+    height: 0px;
+    margin: 2px;
+    border-radius: 3px;
+    background: red;
+	-webkit-transition: height 1.4s ease;
+	-moz-transition: height 1.4s ease;
+	-o-transition: height 1.4s ease;
+	transition: height 1.4s ease;
+	position: absolute;
+	bottom: 0;
+}
+

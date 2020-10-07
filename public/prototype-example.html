@@ -1,0 +1,144 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>UK&I Inno Labs</title>
+      <meta name="description" content="The SAP Mile Tracker">
+      <!-- Link below is for the Fiori Fundamentals stylesheet and javascript file -->
+      <link rel="stylesheet" type="text/css" href="https://unpkg.com/fiori-fundamentals@1.6.0/dist/fiori-fundamentals.min.css">
+      <link rel="stylesheet" type="text/css" href="css/aaStyling.css">
+      <!-- Ishi - load your map.js file locally, and then load the one from Bing as on the below two lines -->
+      <style>
+         @media print {
+         #ghostery-purple-box {
+         display: none !important
+         }
+         }
+      </style>
+   </head>
+   <body cz-shortcut-listen="true">
+   	
+      <!-- Start of Shellbar -->
+      <div class="fd-shellbar">
+         <div class="fd-shellbar__group fd-shellbar__group--start">
+            <a href="launchpad.html" class="fd-shellbar__logo"><img src="//unpkg.com/fiori-fundamentals/dist/images/sap-logo.png" srcset="//unpkg.com/fiori-fundamentals/dist/images/sap-logo@2x.png 1x, //unpkg.com/fiori-fundamentals/dist/images/sap-logo@3x.png 2x, //unpkg.com/fiori-fundamentals/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP" /></a>
+            <div class="fd-shellbar__product">
+               <div class="fd-product-menu">
+                  <div class="fd-popover fd-popover--right">
+                     <div class="fd-popover__control">
+                        <button class="fd-product-menu__control" aria-controls="9GLB2694" aria-haspopup="true" aria-expanded="false">
+                        <span class="fd-shellbar__title fd-product-menu__title">HR Portal</span>
+                        </button>
+                     </div>
+                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="9GLB2694">
+                        <nav class="fd-menu">
+                           <ul class="fd-menu__list">
+                              <li><a role="button" class="fd-menu__item" href="launchpad.html">Home</a></li>
+                              <!--<li><a role="button" class="fd-menu__item">Coming Soon...</a></li>-->
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="fd-shellbar__subtitle">
+               Update First Aider
+            </div>
+            <div class="fd-shellbar__group fd-shellbar__group--end">
+               <div class="fd-shellbar__actions">
+                  <div class="fd-shellbar__group fd-shellbar__group--end">
+                     <div class="fd-shellbar__actions">
+                        <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+                           <div class="fd-search-input fd-search-input--closed">
+                              <div class="fd-popover">
+                                 <div class="fd-popover__control fd-search-input__control">
+                                    <button class="sap-icon--search fd-button--shell" aria-controls="WFm18647" aria-expanded="false" aria-haspopup="true"></button>
+                                    <div class="fd-search-input__closedcontrol" id="WFm18647" aria-hidden="true">
+                                       <div class="fd-search-input__controlinput" aria-controls="2tzvi768" aria-expanded="false" aria-haspopup="true">
+                                          <input type="text" class="fd-input " id="fXyFj568" placeholder="Search products" value="Search" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+                           <button class=" fd-button--shell sap-icon--bell aaShellbarSpacing" aria-label="Notifications">
+                           <span class="fd-counter fd-counter--notification" aria-label="Unread count">3</span></button>
+                        </div>
+                        <div class="fd-shellbar__action fd-shellbar__action--collapse">
+                           <div class="fd-shellbar-collapse">
+                              <div class="fd-popover fd-popover--right">
+                                 <div class="fd-popover__control">
+                                    <div class="fd-shellbar-collapse--control" aria-controls="76dWJ632" aria-expanded="false" aria-haspopup="true" role="button">
+                                       <button class=" fd-button--shell sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
+                                       <span class="fd-counter fd-counter--notification" aria-label="Unread count">3</span></button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        <div class="fd-popover fd-popover--right">
+		          	
+				            <div class="fd-popover__control">
+				            	
+				              <div class="fd-user-menu__control" aria-controls="ZY3AY277" aria-expanded="false" aria-haspopup="true" role="button">
+				                <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url(img/headshot-male.jpg)" aria-label="William Wallingham">WW</span>
+				              </div>
+				            </div>
+				            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="ZY3AY277">
+				              <nav class="fd-menu">
+				                <ul class="fd-menu__list">
+				                  <li><a role="button" class="fd-menu__item">Settings</a></li>
+				                  <li><a role="button" class="fd-menu__item">Sign Out</a></li>
+				                </ul>
+				              </nav>
+				            </div>
+				          </div>
+				        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      <marquee behavior="scroll" direction="left" scrollamount="6" style="background:#7c99b6;color:white">No HR Incidents / 3 Pieces of Team News / 1 New Training Course</marquee>
+      <!-- Start of Main Container -->
+      <div class="aaContentDiv">
+      	
+		<div class="fd-form-item">
+			<label class="fd-form-label fd-form-label--required" for="input-1c">Required Input:</label>
+			<input class="fd-input" type="text" id="nameInput" placeholder="Enter new first aider name">
+		</div>
+		<br>
+		<button class="fd-button fd-button--emphasized " onclick="callAPI()">Update</button>
+         
+      </div>
+      
+      <script>
+      	function callAPI() {
+      		var inputName = document.getElementById('nameInput').value;
+			
+			var data = JSON.stringify({"name": inputName});
+			
+			var xhr = new XMLHttpRequest();
+			xhr.withCredentials = false;
+			
+			xhr.addEventListener("readystatechange", function() {
+			  if(this.readyState === 4) {
+			    console.log(this.responseText);
+			  }
+			});
+			
+			xhr.open("POST", "https://labsbot2.cfapps.eu10.hana.ondemand.com/updateFirstAider");
+			xhr.setRequestHeader("Content-Type", "application/json");
+			
+			xhr.send(data);
+      	}
+      </script>
+      
+   </body>
+</html>

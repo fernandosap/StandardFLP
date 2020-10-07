@@ -1,0 +1,1064 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>UK&I Inno Labs</title>
+      <meta name="description" content="The SAP Mile Tracker">
+      <!-- Link below is for the Fiori Fundamentals stylesheet and javascript file -->
+      <link rel="stylesheet" type="text/css" href="https://unpkg.com/fiori-fundamentals@1.6.0/dist/fiori-fundamentals.min.css">
+      <link rel="stylesheet" type="text/css" href="css/aaStyling.css">
+      <!-- Ishi - load your map.js file locally, and then load the one from Bing as on the below two lines -->
+      <script src="js/bingMaps.js"></script>
+      <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AsL2kL8xSiKoSNEIEXMpkxh13Kt2VEqmN2xs6mdtTYLNYAhR6Vcty-KGM9u1qsvd' async defer></script>
+      <link rel="stylesheet" type="text/css" href="css/bingMaps.css">
+      <style>
+         @media print {
+         #ghostery-purple-box {
+         display: none !important
+         }
+         }
+      </style>
+   </head>
+   <body cz-shortcut-listen="true">
+   	
+      <!-- Start of Shellbar -->
+      <div class="fd-shellbar">
+         <div class="fd-shellbar__group fd-shellbar__group--start">
+            <a href="launchpad.html" class="fd-shellbar__logo"><img src="//unpkg.com/fiori-fundamentals/dist/images/sap-logo.png" srcset="//unpkg.com/fiori-fundamentals/dist/images/sap-logo@2x.png 1x, //unpkg.com/fiori-fundamentals/dist/images/sap-logo@3x.png 2x, //unpkg.com/fiori-fundamentals/dist/images/sap-logo@4x.png 3x" width="48" height="24" alt="SAP" /></a>
+            <div class="fd-shellbar__product">
+               <div class="fd-product-menu">
+                  <div class="fd-popover fd-popover--right">
+                     <div class="fd-popover__control">
+                        <button class="fd-product-menu__control" aria-controls="9GLB2694" aria-haspopup="true" aria-expanded="false">
+                        <span class="fd-shellbar__title fd-product-menu__title">Support Team Portal</span>
+                        </button>
+                     </div>
+                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="9GLB2694">
+                        <nav class="fd-menu">
+                           <ul class="fd-menu__list">
+                              <li><a role="button" class="fd-menu__item" href="launchpad.html">Home</a></li>
+                              <!--<li><a role="button" class="fd-menu__item">Coming Soon...</a></li>-->
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="fd-shellbar__subtitle">
+               Customer Ticket #28902
+            </div>
+            <div class="fd-shellbar__group fd-shellbar__group--end">
+               <div class="fd-shellbar__actions">
+                  <div class="fd-shellbar__group fd-shellbar__group--end">
+                     <div class="fd-shellbar__actions">
+                        <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+                           <div class="fd-search-input fd-search-input--closed">
+                              <div class="fd-popover">
+                                 <div class="fd-popover__control fd-search-input__control">
+                                    <button class="sap-icon--search fd-button--shell" aria-controls="WFm18647" aria-expanded="false" aria-haspopup="true"></button>
+                                    <div class="fd-search-input__closedcontrol" id="WFm18647" aria-hidden="true">
+                                       <div class="fd-search-input__controlinput" aria-controls="2tzvi768" aria-expanded="false" aria-haspopup="true">
+                                          <input type="text" class="fd-input " id="fXyFj568" placeholder="Search products" value="Search" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+                           <button class=" fd-button--shell sap-icon--bell aaShellbarSpacing" aria-label="Notifications">
+                           <span class="fd-counter fd-counter--notification" aria-label="Unread count">3</span></button>
+                        </div>
+                        <div class="fd-shellbar__action fd-shellbar__action--collapse">
+                           <div class="fd-shellbar-collapse">
+                              <div class="fd-popover fd-popover--right">
+                                 <div class="fd-popover__control">
+                                    <div class="fd-shellbar-collapse--control" aria-controls="76dWJ632" aria-expanded="false" aria-haspopup="true" role="button">
+                                       <button class=" fd-button--shell sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
+                                       <span class="fd-counter fd-counter--notification" aria-label="Unread count">3</span></button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        <div class="fd-popover fd-popover--right">
+		          	
+				            <div class="fd-popover__control">
+				            	
+				              <div class="fd-user-menu__control" aria-controls="ZY3AY277" aria-expanded="false" aria-haspopup="true" role="button">
+				                <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url(img/headshot-male.jpg)" aria-label="William Wallingham">WW</span>
+				              </div>
+				            </div>
+				            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="ZY3AY277">
+				              <nav class="fd-menu">
+				                <ul class="fd-menu__list">
+				                  <li><a role="button" class="fd-menu__item">Settings</a></li>
+				                  <li><a role="button" class="fd-menu__item">Sign Out</a></li>
+				                </ul>
+				              </nav>
+				            </div>
+				          </div>
+				        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      <marquee behavior="scroll" direction="left" scrollamount="6" style="background:#7c99b6;color:white">No Network Incidents / 3 Pieces of Team News / 1 New Training Course</marquee>
+      <!-- Start of Main Container -->
+      <div class="aaContentDiv">
+         <ul class="fd-breadcrumb">
+		    <li class="fd-breadcrumb__item">
+		        <a class="fd-breadcrumb__link" href="#">Launchpad</a>
+		    </li>
+		    <li class="fd-breadcrumb__item">
+		        <a class="fd-breadcrumb__link" href="#">Customer Support Portal</a>
+		    </li>
+		    <li class="fd-breadcrumb__item">
+		        <a class="fd-breadcrumb__link" href="#">Customer</a>
+		    </li>
+		    <li class="fd-breadcrumb__item">
+		        <a class="fd-breadcrumb__link" href="#">Resolve Ticket #28902</a>
+		    </li>
+		</ul>
+         <div class="newRight70">
+            <div class="crmDataCard">
+	            <div class="crmCardTopHalf">
+	            	<div class="cardInner">
+		            	<h2>Ticket #28902 - Dominic H, Breakdown Event</h2>
+		            	
+		            	<p class="columnFlexHolder"><span class="leftCol"><b>Name:</b> Dominic H </span><span class="midCol"><b>Customer ID:</b> JAC190053 </span><span class="rightCol"><b>Current Sentiment:</b> <span class="sentimentValuesHere"><span style="color:orange;">-0.31% </span><span style="color:red;">(↓-0.33%) </span></span><span class="leftCol"><b>Address:</b> SAP Clockhouse Place, TW14 8HD, Feltham </span></span></b></p>
+		            </div>
+		        </div>
+		        <div class="crmCardMid">
+					<ul class="fd-tabs aaTabs" role="tablist">
+					<li class="fd-tabs__item">
+					    <a class="fd-tabs__link" aria-controls="tab01content" aria-selected="true" onclick="selectTab(1)" role="tab" id="tab01">
+					        Customer Information
+					        
+					    </a>
+					</li>
+					<li class="fd-tabs__item">
+					    <a class="fd-tabs__link" aria-controls="tab02content" aria-selected="false" onclick="selectTab(2)" role="tab" id="tab02">
+					        Previous Service Tickets
+					    </a>
+					</li>
+					<li class="fd-tabs__item">
+					    <a class="fd-tabs__link" aria-controls="tab03content" aria-selected="false" onclick="selectTab(3)" role="tab" id="tab03">
+					        Interactions & Actions
+					    </a>
+					</li>
+					<li class="fd-tabs__item">
+					    <a class="fd-tabs__link" aria-controls="tab04content" aria-selected="false" onclick="selectTab(4)" role="tab" id="tab04">
+					        Purchase History
+					    </a>
+					</li>
+					<li class="fd-tabs__item">
+					    <a class="fd-tabs__link" aria-controls="tab05content" aria-selected="false" onclick="selectTab(5)" role="tab" id="tab05">
+					        Service History
+					    </a>
+					</li>
+					</ul>
+				</div>
+				
+					
+				<div class="crmCardBottomHalf">
+					
+					<div class="fd-tabs__panel aaPanel" aria-expanded="true" id="tab01content" role="tabpanel">
+						<div class="panelDetail">
+							<h3>Customer Information</h3>
+							<div id="customerWriteUp">
+								
+				            </div>
+						</div>
+					</div>
+				
+					<div class="fd-tabs__panel" aria-expanded="false" id="tab02content" role="tabpanel">
+						<div class="">
+							<table class="fd-table fd-table--no-borders">
+			                  <thead>
+			                     <tr>
+			                        <th scope="col"></th>
+			                        <th scope="col">Topic</th>
+			                        <th scope="col">Experience ID</th>
+			                        <th scope="col">Priority</th>
+			                        <th scope="col">Latest Status</th>
+			                     </tr>
+			                  </thead>
+			                  <tbody>
+			                     <tr>
+			                        <td><span class=" fd-image--s fd-image--circle" aria-label="Image label" style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+			                           </span>
+			                        </td>
+			                        <td><a href="JobDetail61251.html" class="fd-has-font-weight-semi">Engine Management light flashing</a></td>
+			                        <td>XM 61251</td>
+			                        <td>1</td>
+			                        <td>Closed</td>
+			                     </tr>
+			                     <tr>
+			                        <td><span class=" fd-image--s fd-image--circle" aria-label="Image label" style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+			                           </span>
+			                        </td>
+			                        <td><a href="#" class="fd-has-font-weight-semi">Information Request: Warranty months expiring?</a></td>
+			                        <td>XM 61268</td>
+			                        <td>3</td>
+			                        <td>Closed</td>
+			                     </tr>
+			                     <tr>
+			                        <td><span class=" fd-image--s fd-image--circle" aria-label="Image label" style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+			                           </span>
+			                        </td>
+			                        <td><a href="#" class="fd-has-font-weight-semi">Dealer follow-up, 12 week review - POSITIVE</a></td>
+			                        <td>XM 61272</td>
+			                        <td>2</td>
+			                        <td>Complete</td>
+			                     </tr>
+			                  </tbody>
+		            		</table>
+						</div>
+					</div>
+					
+					<div class="fd-tabs__panel" aria-expanded="false" id="tab03content" role="tabpanel">
+						<div class="panelDetail">
+							<h3>Interactions & Actions</h3>
+							
+							
+							
+							<!-- Start of tree element -->
+							
+							
+							
+							<div class="fd-tree fd-tree--header">
+							    <div class="fd-tree__row fd-tree__row--header">
+							        <div class="fd-tree__col fd-tree__col--control">
+							            Topic
+							        </div>
+							        <div class="fd-tree__col">
+							            
+							        </div>
+							        <div class="fd-tree__col">
+							            
+							        </div>
+							        <div class="fd-tree__col">
+							            
+							        </div>
+							        <div class="fd-tree__col fd-tree__col--actions">
+							        </div>
+							    </div>
+							</div>
+							<ul class="fd-tree" id="tWsod582a" role="tree">
+							    <li class="fd-tree__item" role="treeitem" id="inYUX852a" aria-expanded="false">
+							        <div class="fd-tree__row">
+							            <div class="fd-tree__col fd-tree__col--control">
+							                <button class="fd-tree__control" aria-label="Expand" aria-controls="inYUX852a"
+							                aria-pressed="false"></button>
+							                Chat Interactions
+							            </div>
+							            <div class="fd-tree__col">
+							                
+							            </div>
+							            <div class="fd-tree__col">
+							                
+							            </div>
+							            <div class="fd-tree__col">
+							                <span class="fd-label">
+							                    More Info
+							                </span>
+							            </div>
+							        </div>
+							        <ul class="fd-tree__group fd-tree__group--sublevel-1 is-hidden" role="group" aria-hidden="true">
+							            <li class="fd-tree__item" role="treeitem" id="Bxd8s850a" aria-expanded="false">
+							               
+							               <div class="treePane">
+							               		<h3>Last conversation - Just Now</h3>
+							               		<p><b>Dominic H: </b>My car is broken yet again</p>
+							               		<p><b>JA Cars & Co Chatbot: </b>Sorry to hear that, Dom. Let's get you moving as quickly as possible. Please can I ask the symptoms?</p>
+							               		<p><b>Dominic H: </b>No, I'm not the mechanic you sort it out</p>
+							               		<p><b>JA Cars & Co Chatbot: </b>No problem... Please confirm this is your location?<br><img src='img/dom-location-map.jpeg' style="width:300px;"></p>
+							               		<p><b>Dominic H: </b>Yes I am at the ICC Birmingham</p>
+							               		<p><b>JA Cars & Co Chatbot: </b>And your car registration is BT68 ABC?</p>
+							               		<p><b>Dominic H: </b>My car registration is BT68 ABC</p>
+							               		<p><b>JA Cars & Co Chatbot: </b>Thanks for confirming Dom. As this is the second time it has happened, I am looping Carl into this conversation... </p>
+							               	</div>
+							            </li>
+							        </ul>
+							    </li>
+							    <li class="fd-tree__item" role="treeitem" id="inYUX852" aria-expanded="false">
+							        <div class="fd-tree__row">
+							            <div class="fd-tree__col fd-tree__col--control">
+							                <button class="fd-tree__control" aria-label="Expand" aria-controls="inYUX852"
+							                aria-pressed="false"></button>
+							                Resolution Path
+							            </div>
+							            <div class="fd-tree__col">
+							                
+							            </div>
+							            <div class="fd-tree__col">
+							                
+							            </div>
+							            <div class="fd-tree__col">
+							                <span class="fd-label">
+							                    
+							                </span>
+							            </div>
+							        </div>
+							        <ul class="fd-tree__group fd-tree__group--sublevel-1 is-hidden" role="group" aria-hidden="true">
+							            <li class="fd-tree__item" role="treeitem" id="Bxd8s850" aria-expanded="false">
+							                <div class="fd-tree__row">
+							                    <div class="fd-tree__col fd-tree__col--control">
+							                        <button class="fd-tree__control " aria-label="Expand" aria-controls="Bxd8s850"
+							                        aria-pressed="false"></button>
+							                        Collect Vehicle
+							                    </div>
+							                    <div class="fd-tree__col">
+							                        
+							                    </div>
+							                    <div class="fd-tree__col">
+							                        
+							                    </div>
+							                    <div class="fd-tree__col">
+							                        <span class="fd-label">
+							                            
+							                        </span>
+							                    </div>
+							                    <div class="fd-tree__col fd-tree__col--actions">
+							                        <div class="fd-popover fd-popover--right">
+							                            <div class="fd-popover__control">
+							                                <button class="fd-button--light sap-icon--overflow" aria-controls="lklkj3" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+							                            </div>
+							                            <div class="fd-popover__body fd-popover__body--right zAdjustment" aria-hidden="true" id="lklkj3">
+							                                <nav class="fd-menu">
+							                                    <ul class="fd-menu__list">
+							                                        <li><a href="#" class="fd-menu__item">Edit</a></li>
+							                                        <li><a href="#" class="fd-menu__item">Lock</a></li>
+							                                        <li><a href="#" class="fd-menu__item">Duplicate</a></li>
+							                                        <li><a href="#" class="fd-menu__item">Delete</a></li>
+							                                    </ul>
+							                                </nav>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </div>
+							                <ul class="fd-tree__group fd-tree__group--sublevel-2 is-hidden" role="group" aria-hidden="true">
+							                    <li class="fd-tree__item" role="treeitem" id="qz9hB117" aria-expanded="false">
+							                        <div class="fd-tree__row">
+							                            <div class="fd-tree__col fd-tree__col--control">
+							                                Collection/Recovery Location
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                The ICC Birmingham, Birmingham, B1 2EA
+							                            </div>
+
+							                            <div class="fd-tree__col">
+							                                <span class="fd-label">
+							                                    
+							                                </span>
+							                            </div>
+							                        </div>
+							                    </li>
+
+							                    <li class="fd-tree__item" role="treeitem" id="qz9hB117" aria-expanded="false">
+							                        <div class="fd-tree__row">
+							                            <div class="fd-tree__col fd-tree__col--control">
+							                                Recovery Time
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                ASAP
+							                            </div>
+
+							                            <div class="fd-tree__col">
+							                                <span class="fd-label">
+							                                    
+							                                </span>
+							                            </div>
+							                        </div>
+							                    </li>
+							                    
+							                    <li class="fd-tree__item" role="treeitem" id="qz9hB117" aria-expanded="false">
+							                        <div class="fd-tree__row">
+							                            <div class="fd-tree__col fd-tree__col--control">
+							                                Onwards travel required?
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                Yes - collect customer
+							                            </div>
+
+							                            <div class="fd-tree__col">
+							                                <span class="fd-label">
+							                                    
+							                                </span>
+							                            </div>
+							                        </div>
+							                    </li>
+							                    
+							                    <li class="fd-tree__item" role="treeitem" id="qz9hB117" aria-expanded="false">
+							                        <div class="fd-tree__row">
+							                            <div class="fd-tree__col fd-tree__col--control">
+							                                Onwards Destination
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                Birmingham Airport
+							                            </div>
+
+							                            <div class="fd-tree__col">
+							                                <span class="fd-label">
+							                                    
+							                                </span>
+							                            </div>
+							                        </div>
+							                    </li>
+							                    
+							                </ul>
+							            </li>
+
+							            <li class="fd-tree__item" role="treeitem" id="Bxd8s850b" aria-expanded="false">
+							                <div class="fd-tree__row">
+							                    <div class="fd-tree__col fd-tree__col--control">
+							                        <button class="fd-tree__control" aria-label="Expand" aria-controls="Bxd8s850b"
+							                        aria-pressed="false"></button>
+							                        Repair Vehicle
+							                    </div>
+							                    <div class="fd-tree__col">
+							                        
+							                    </div>
+							                    <div class="fd-tree__col">
+							                        
+							                    </div>
+							                    <div class="fd-tree__col">
+							                        <span class="fd-label">
+							                            
+							                        </span>
+							                    </div>
+							                    <div class="fd-tree__col fd-tree__col--actions">
+							                        <div class="fd-popover fd-popover--right">
+							                            <div class="fd-popover__control">
+							                                <button class="fd-button--light sap-icon--overflow" aria-controls="lklkj3b" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+							                            </div>
+							                            <div class="fd-popover__body fd-popover__body--right zAdjustment" aria-hidden="true" id="lklkj3b">
+							                                <nav class="fd-menu">
+							                                    <ul class="fd-menu__list">
+							                                        <li><a href="#" class="fd-menu__item">Edit</a></li>
+							                                        <li><a href="#" class="fd-menu__item">Lock</a></li>
+							                                    </ul>
+							                                </nav>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </div>
+							                <ul class="fd-tree__group fd-tree__group--sublevel-2 is-hidden" role="group" aria-hidden="true">
+							                    <li class="fd-tree__item" role="treeitem" id="qz9hB117b" aria-expanded="false">
+							                        <div class="fd-tree__row">
+							                            <div class="fd-tree__col fd-tree__col--control">
+							                                Repair Location
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                Fort Dunlop Branch
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                <span class="fd-label">
+							                                    
+							                                </span>
+							                            </div>
+							                        </div>
+							                    </li>
+
+							                    <li class="fd-tree__item" role="treeitem" id="qz9hB117b" aria-expanded="false">
+							                        <div class="fd-tree__row">
+							                            <div class="fd-tree__col fd-tree__col--control">
+							                                Booking ID
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                EM002421
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                <span class="fd-label">
+							                                    
+							                                </span>
+							                            </div>
+							                        </div>
+							                    </li>
+							                </ul>
+							            </li>
+
+							            <li class="fd-tree__item" role="treeitem" id="Bxd8s850c" aria-expanded="false">
+							                <div class="fd-tree__row">
+							                    <div class="fd-tree__col fd-tree__col--control">
+							                        <button class="fd-tree__control" aria-label="Expand" aria-controls="Bxd8s850c"
+							                        aria-pressed="false"></button>
+							                        Return Vehicle
+							                    </div>
+							                    <div class="fd-tree__col">
+							                        
+							                    </div>
+							                    <div class="fd-tree__col">
+							                        
+							                    </div>
+							                    <div class="fd-tree__col">
+							                        <span class="fd-label">
+							                            
+							                        </span>
+							                    </div>
+							                    <div class="fd-tree__col fd-tree__col--actions">
+							                        <div class="fd-popover fd-popover--right">
+							                            <div class="fd-popover__control">
+							                                <button class="fd-button--light sap-icon--overflow" aria-controls="lklkj3c" aria-haspopup="true" aria-expanded="false" aria-label="More"></button>
+							                            </div>
+							                            <div class="fd-popover__body fd-popover__body--right zAdjustment" aria-hidden="true" id="lklkj3c">
+							                                <nav class="fd-menu">
+							                                    <ul class="fd-menu__list">
+							                                        <li><a href="#" class="fd-menu__item">Edit</a></li>
+							                                        <li><a href="#" class="fd-menu__item">Lock</a></li>
+							                                    </ul>
+							                                </nav>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </div>
+							                <ul class="fd-tree__group fd-tree__group--sublevel-2 is-hidden" role="group" aria-hidden="true">
+							                    <li class="fd-tree__item" role="treeitem" id="qz9hB117c" aria-expanded="false">
+							                        <div class="fd-tree__row">
+							                            <div class="fd-tree__col fd-tree__col--control">
+							                                Delivery Location
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                Birmingham Airport
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                <span class="fd-label">
+							                                    
+							                                </span>
+							                            </div>
+							                        </div>
+							                    </li>
+
+							                    <li class="fd-tree__item" role="treeitem" id="qz9hB117c" aria-expanded="false">
+							                        <div class="fd-tree__row">
+							                            <div class="fd-tree__col fd-tree__col--control">
+							                                Delivery Date / Time
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                02/12/2019, 19:45
+							                            </div>
+							                            <div class="fd-tree__col">
+							                                <span class="fd-label">
+							                                    
+							                                </span>
+							                            </div>
+							                        </div>
+							                    </li>
+							                </ul>
+							            </li>
+							    	</ul>
+							    	
+							    	
+							    </li>
+							  </ul>
+														
+							
+							
+							<!-- End of tree element -->
+							<br><br><br><br>
+						</div>
+					</div>
+					
+					<div class="fd-tabs__panel" aria-expanded="false" id="tab04content" role="tabpanel">
+						<div class="panelDetail">
+							<h3>Purchase History</h3>
+							
+							<table class="fd-table fd-table--no-borders">
+			                  <thead>
+			                     <tr>
+			                        <th scope="col"></th>
+			                        <th scope="col">Purchase Order ID</th>
+			                        <th scope="col">Date</th>
+			                        <th scope="col">Branch</th>
+			                     </tr>
+			                  </thead>
+			                  <tbody>
+			                     <tr>
+			                        <td><span class=" fd-image--s fd-image--circle" aria-label="Image label" style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+			                           </span>
+			                        </td>
+			                        <td><a href="JobDetail61251.html" class="fd-has-font-weight-semi">PO0008413</a></td>
+			                        <td>11/11/2018</td>
+			                        <td>Snow Hill</td>
+			                     </tr>
+			                     <tr>
+			                        <td><span class=" fd-image--s fd-image--circle" aria-label="Image label" style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+			                           </span>
+			                        </td>
+			                        <td><a href="#" class="fd-has-font-weight-semi">PO0006452</a></td>
+			                        <td>20/11/2016</td>
+			                        <td>Snow Hill</td>
+			                     </tr>
+			                     <tr>
+			                        <td><span class=" fd-image--s fd-image--circle" aria-label="Image label" style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+			                           </span>
+			                        </td>
+			                        <td><a href="#" class="fd-has-font-weight-semi">PO0005313</a></td>
+			                        <td>22/11/2014</td>
+			                        <td>Snow Hill</td>
+			                     </tr>
+			                  </tbody>
+		            		</table>
+							
+						</div>
+					</div>
+					
+					<div class="fd-tabs__panel" aria-expanded="false" id="tab05content" role="tabpanel">
+						<div class="panelDetail">
+							<h3>Service History</h3>
+							
+							<table class="fd-table fd-table--no-borders">
+			                  <thead>
+			                     <tr>
+			                        <th scope="col"></th>
+			                        <th scope="col">Service Record ID</th>
+			                        <th scope="col">Mileage</th>
+			                        <th scope="col">Date</th>
+			                        <th scope="col">Status</th>
+			                     </tr>
+			                  </thead>
+			                  <tbody>
+			                     <tr>
+			                        <td><span class=" fd-image--s fd-image--circle" aria-label="Image label" style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+			                           </span>
+			                        </td>
+			                        <td><a href="JobDetail61251.html" class="fd-has-font-weight-semi">Service 01</a></td>
+			                        <td>31,642</td>
+			                        <td>21/09/2019</td>
+			                        <td style="color:orange">OK</td>
+			                     </tr>
+			                     <tr>
+			                        <td><span class=" fd-image--s fd-image--circle" aria-label="Image label" style="background-image: url(http://api.adorable.io/avatars/50/rodney.artichoke@hybris.com.png);">
+			                           </span>
+			                        </td>
+			                        <td><a href="#" class="fd-has-font-weight-semi">Service 02</a></td>
+			                        <td>14,623</td>
+			                        <td>03/04/2019</td>
+			                        <td style="color:orange">OK</td>
+			                     </tr>
+			                  </tbody>
+		            		</table>
+							
+						</div>
+					</div>
+					
+				</div>
+				
+            </div>
+            
+            
+            
+            <div class="suggestionsCard">
+            	<div class="colourBar"></div>
+            	<!-- Ishi - map container here -->
+            	<div class="cardInnerRight">
+            		<div id="myMap" style="position:relative;width:100%;height:400px;"></div>
+            	</div>
+            	<div class="cardInnerLeft">
+                  <h2>Conversational Insights</h2>
+                  <div id="initSentiment">
+	                  
+				  </div>
+                  <p id="insightsHere"></p>
+                  <h2>Suggested Actions</h2>
+                  <div id="suggestionHere"></div>
+                  <br>
+               </div>
+            </div>
+         </div>
+         <div class="left70">
+            <div class="card" style="height: 80%;" id="botHolder">
+               <!-- <iframe src="https://ukisug1-i350091trial.dispatcher.hanatrial.ondemand.com/jens_portal.html?hc_reset" scrolling="no" style="overflow: hidden; height:100%; width:100%;" height="100%" width="100%"></iframe> -->
+            </div>
+         </div>
+         <br>
+         <br>
+         <!-- End of Main Container -->
+      </div>
+      
+      <script></script>
+      
+      <script src="js/fioriFundamentals.js"></script>
+      
+		<script src="js/modifiedWebchat.js"
+		channelId="ee014fee-3165-4fbe-8e42-9f564ae8befb"
+		token="e9761d17c59d3bd785b5607404049d8e"
+		id="cai-webchat"
+		></script>
+	
+      
+      	<script>
+		var popover02Content = "<div class='popUpCard'><h3>Birmingham Snow Hill</h3><p><b>Mechanics Available Today:</b> 1</p><p><b>Parts available for vehicle:</b> 82%</p><p><b>Courtesy Car(s) Available: </b> 3</p><br></div>";
+		var popover03Content = "<div class='popUpCard'><h3>Fort Dunlop</h3><p><b>Mechanics Available Today:</b> 3</p><p><b>Parts available for vehicle:</b> 97%</p><p><b>Courtesy Car(s) Available: </b> 2</p><br></div>";
+		
+		var domLocationPopover = 'Dominic\'s Location has been added to the map'
+		var BSHStocks = '<br>- <div class="fd-popover"><div class="fd-popover__control"><span style="color:orange;">Low Mechanic Availability</span> at <a aria-controls="popover02" aria-haspopup="true" aria-expanded="false" aria-label="Birmingham Snow Hill Branch" onclick="showPopover(2)" id="popoverLink02">Birmingham Snow Hill Branch</a></span></div><div class="fd-popover__body" aria-hidden="true" id="popover02">' + popover02Content + '</div></div>';
+		var FDStocks = '<br>- <div class="fd-popover"><div class="fd-popover__control"><span style="color:green;">High Mechanic Availability</span> at <a aria-controls="popover03" aria-haspopup="true" aria-expanded="false" aria-label="Fort Dunlop" onclick="showPopover(3)" id="popoverLink03">Fort Dunlop</a></span></div><div class="fd-popover__body" aria-hidden="true" id="popover03">' + popover03Content + '</div></div>';
+		
+		var generatedMessage = [
+			"We can get a tow truck to you within one hour",
+			"Can you let me know your flight details please?",
+			"Would you like us to arrange; a courtesy car; or pick you up and take you to the airport, and have your car collected?",
+			"And what time do you get back?",
+			"Your transport for your onwards destination is being arranged. Here is a link to track our driver: https://jacarsandco-edb3a2007.dispatcher.eu2.hana.ondemand.com/tracking-28902.html                                         I have also scheduled your car to be repaired at the Fort Dunlop Repair Centre.",
+			"Ok all sorted, we will meet you at arrivals from 19:45. We have parts and mechanics on shift today so will aim to drop off your car at the airport."
+			]
+		var messageId = 0;
+		
+		var sentimentValue = -0.31;
+		var sentimentDelta = -0.33;
+		
+		var insightStrings = [
+				domLocationPopover,
+				domLocationPopover + "<br><b>NLP</b> shows a <b>further decrease</b> in <b>sentiment</b>.<br><b>Onwards desitination: </b> Airport",
+				"<br><b>Target Arrival Time: </b> 11:30AM",
+				"<br>Dom has requested to be picked up by JA Cars",
+				"<br><b>Return Time: </b> 19:45PM <br> <b>Service Availability: </b>" + BSHStocks + "" + FDStocks,
+				"<br>Booking Made - Emergency Maintenance <a onclick=\"openInteractionsContent()\">#E002421</a>",
+				"<br><b>NLP</b> shows an <b>increase</b> in <b>sentiment</b>",
+				'<p><b>Dominic</b> is a <b>key customer</b> who on average <b>purchases a new car every 2 years</b>. <br>Based on natural language processing and previous experience data tickets, we are observing a <b>-33% sentiment change</b>.<br>This is likely due to Dominic raising <b>3 service tickets this year</b>.</p><p><b>Current Sentiment: Negative <span class="sentimentValuesHere"><span style="color:orange;">-0.31% </span><span style="color:red;">(↓-0.33%) </span></span></b></p>'
+			]
+			
+			var recoveryChoice = '<fieldset class="fd-fieldset">'+
+		'			    <div class="fd-form-item">'+
+		'			        <label class="fd-form-label" for="Ai4ez611">'+
+		'			            <input type="checkbox" class="fd-checkbox" id="Ai4ez611">'+
+		'			            Send a Tow Truck<span style=\'color:red;\'>(1 hour)</span>'+
+		'			        </label>'+
+		'			    </div>'+
+		'			    <div class="fd-form-item">'+
+		'			        <label class="fd-form-label" for="Ai4ez612">'+
+		'			            <input type="checkbox" class="fd-checkbox" id="Ai4ez612">'+
+		'			            Courtesy car <span style=\'color:orange;\'>(45 mins)</span>'+
+		'			        </label>'+
+		'			    </div>'+
+		'			    <div class="fd-form-item">'+
+		'			        <label class="fd-form-label" for="Ai4ez613">'+
+		'			            <input type="checkbox" class="fd-checkbox" id="Ai4ez613">'+
+		'			            Arrange onward travel  <span style=\'color:green;\'>(15 mins)</span>'+
+		'			        </label>'+
+		'			    </div>'+
+		'			</fieldset>';
+		
+		var suggestionStrings = [
+				"This is a <b>breakdown event</b>, you first need to arrange a tow truck for Dominic's Vehicle <b>(ETA from partner API: 1 Hour)</b> " + firstSuggestion("Offer vehicle collection in 1 hour"),
+				"Find out Dominic\'s required arrival time at destination. " + updateMap01SuggestionButtonWithText("Ask for flight details from customer"),
+				"Offer two of the following services to Dom: <br><br>" + recoveryChoice + "" + normalSuggestionButtonWithText("Offer recovery choices"),
+				"We have enough staff to take Dominic to their destination. Vehicle can be recovered later, after onwards travel has been arranged.<br><b>Ask customer when they need their vehicle back. </b>" + updateMap02SuggestionButtonWithText("Find out when customer needs vehicle"),
+				"See the Insights panel for <b>stock and availability</b> at the <b>2 nearest garages</b>. <br>These <b>garages</b> have been <b>added to the map</b>. <br><br>Suggestion: <b>Use Fort Dunlop Repair Centre (Higher percentage of parts available)</b> <br><br><button class=\"fd-button\">Book Repair at Birmingham Snow Hill & Notify Customer</button>       <button class=\"fd-button\" onclick='postTextInCAI()'>Book Repair at Fort Dunlop & Notify Customer</button>",
+				"Vehicle Recovery and Repair has been arranged. You could deliver the car to Dominic at the airport at 19:45, and if the car is not repaired in time a courtesy car has been reserved. <br>Suggestion: Arrange Pick Up and send Conversation Summary" + paranormalSuggestionButtonWithText("Arrange collection and send Summary"),
+				"Resolution Path complete - the Recover, Repair and Return of the vehicle have all been arranged. View and amend the actions if required." + openInteractionsContentButton("View Interaction Details"),
+			]
+		
+		
+	
+		var loadingSpinner = '<div class="fd-spinner" aria-hidden="false" aria-label="Loading"><div class="fd-spinner__body"></div></div>'
+				
+		var suggestionCount = 0
+		var previousInsights = ""
+		
+		// ...com/keynote-dashboard-aaron.html
+      	
+		// Auto expanding the chat window
+		// Define the function
+		function autoOpenChat() { 
+			document.querySelector('.RecastAppExpander.open').click();
+		}
+		// Call the function upon page load, and after 1000 milliseconds
+		setTimeout(autoOpenChat, 1000);
+		
+		
+		function showPopover(popoverId) {
+
+			var requestedPopover = 'popover0' + popoverId;
+			var popoverSender = 'popoverLink0' + popoverId;
+			var closePopoverOnClick = "closePopover(" + popoverId + ")";
+			var showPopoverOnClick = "showPopover(" + popoverId + ")";
+			document.getElementById(requestedPopover).setAttribute("aria-hidden","false");
+			document.getElementById(popoverSender).setAttribute("onclick", closePopoverOnClick);
+
+		}
+		
+		function closePopover(popoverId) {
+
+			var requestedPopover = 'popover0' + popoverId;
+			var popoverSender = 'popoverLink0' + popoverId;
+			var closePopoverOnClick = "closePopover(" + popoverId + ")";
+			var showPopoverOnClick = "showPopover(" + popoverId + ")";
+			document.getElementById(requestedPopover).setAttribute("aria-hidden","true");
+			document.getElementById(popoverSender).setAttribute("onclick", showPopoverOnClick);
+
+		}
+		
+		
+		// Copy functionality (Unused...)
+		function myFunction() {
+			  //document.getElementById("myInput").value = generatedMessage[messageId];
+			  //var copyText = document.getElementById("myInput");
+			  //copyText.select();
+			  //copyText.setSelectionRange(0, 99999)
+			  //document.execCommand("copy");
+			  //alert("Copied the text: " + copyText.value);
+			}
+		
+		function postTextInCAI() {
+		
+			//myFunction();	
+			
+			document.querySelector("#recast-webchat-div > div > div.RecastAppChat.open > div.RecastAppInput > textarea").value = document.querySelector("#recast-webchat-div > div > div.RecastAppChat.open > div.RecastAppInput > textarea").value + generatedMessage[messageId];
+			document.querySelector("#thatTextArea").focus();
+			//document.querySelector("#recast-webchat-div > div > div.RecastAppChat.open > div.RecastAppInput > textarea").focus();
+			//document.execCommand("paste");
+			console.log("Did that work??");
+			if (messageId < generatedMessage.length) {
+				messageId = messageId + 1;
+			} else {
+				messageId = 0;
+			}
+		}
+
+		
+		function sentimentDelay01() {
+			setTimeout(newSentiment)
+		}
+		
+		function changeSentiment(newSentiment) {
+			
+			sentimentDelta = sentimentValue + newSentiment;
+			sentimentValue = sentimentValue + newSentiment;
+			
+			document.getElementsByClassName('sentimentValuesHere')[0].innerHTML = '<span style="color:orange;"> ' + sentimentValue + '% </span><span style="color:red;"> (' + newSentiment + '%)</span>'
+			document.getElementsByClassName('sentimentValuesHere')[1].innerHTML = '<span style="color:orange;"> ' + sentimentValue + '% </span><span style="color:red;"> (' + newSentiment + '%)</span>'
+		
+			
+		}
+		
+		function changeSentiment02(newSentiment) {
+			
+			sentimentDelta = newSentiment;
+			sentimentValue = sentimentValue + newSentiment;
+			
+			document.getElementsByClassName('sentimentValuesHere')[0].innerHTML = '<span style="color:orange;"> ' + sentimentValue + ' </span><span style="color:green;"> (' + newSentiment + '%)</span>'
+			document.getElementsByClassName('sentimentValuesHere')[1].innerHTML = '<span style="color:orange;"> ' + sentimentValue + ' </span><span style="color:green;"> (' + newSentiment + '%)</span>'
+			
+		}
+		
+		var normalSuggestionButton = '<br><br><button class="fd-button" onclick="postTextInCAI()">Use Suggestion</button> <br>'
+		
+		function normalSuggestionButtonWithText(buttonText) {
+			
+			var openBtn = '<br><br><button class="fd-button" onclick="postTextInCAI()">'
+			var closeBtn = '</button> <br>'
+			var newSuggestionButton = openBtn + buttonText + closeBtn
+			
+			return newSuggestionButton
+		}
+		
+		function paranormalSuggestionButtonWithText(buttonText) {
+			
+			var openBtn = '<br><br><button class="fd-button" onclick="postTextInCAI();setTimeout(function() {changeSentiment02(0.85);}, 8000)">'
+			var closeBtn = '</button> <br>'
+			var newSuggestionButton = openBtn + buttonText + closeBtn
+			
+			return newSuggestionButton
+			
+		}
+		
+		function firstSuggestion(buttonText) {
+			
+			var openBtn = '<br><br><button class="fd-button" onclick="postTextInCAI();setTimeout(function() {changeSentiment(-0.14);}, 8000)">'
+			var closeBtn = '</button> <br>'
+			var newSuggestionButton = openBtn + buttonText + closeBtn
+			
+			return newSuggestionButton
+		}
+		
+		function updateMap01SuggestionButtonWithText(buttonText) {
+			var openBtn = '<br><br><button class="fd-button" onclick="postTextInCAIAndAddDirectionToMap()">'
+			var closeBtn = '</button> <br>'
+			var newSuggestionButton = openBtn + buttonText + closeBtn
+			
+			return newSuggestionButton
+		}
+		
+		function updateMap02SuggestionButtonWithText(buttonText) {
+			var openBtn = '<br><br><button class="fd-button" onclick="postTextInCAIAndAddGaragesToMap()">'
+			var closeBtn = '</button> <br>'
+			var newSuggestionButton = openBtn + buttonText + closeBtn
+			
+			return newSuggestionButton
+		}
+		
+		function postTextInCAIAndAddDirectionToMap(delayTime) {
+			postTextInCAI();
+			setTimeout(GetDirections, 9000);
+			return ("");
+		}
+		
+		function postTextInCAIAndAddGaragesToMap(delayTime) {
+			postTextInCAI();
+			setTimeout(addPins, 7500);
+			return ("");
+		}
+		//setTimeout(addPins, 500);
+		
+		function openInteractionsContentButton(buttonText) {
+			
+			//var openBtn = '<br><br><button class="fd-button" onclick="openInteractionsContent();setTimeout(function() {changeSentiment02(0.8);}, 8000)">'
+			var openBtn = '<br><br><button class="fd-button" onclick="setTimeout(function() {changeSentiment02(0.8);}, 8000)">'
+			var closeBtn = '</button> <br>'
+			var newSuggestionButton = openBtn + buttonText + closeBtn
+			
+			return newSuggestionButton
+			
+		}
+		
+		function openInteractionsContent() {
+			setTimeout(click01, 200)
+			setTimeout(click02, 400)
+			setTimeout(click03, 600)
+			setTimeout(click04, 800)
+			setTimeout(click05, 1000)
+		}
+		
+		function click01() {
+			document.querySelector("#tab03").click();
+			document.querySelector("#tab03").focus();
+		}
+		
+		function click02() {
+			document.querySelector("#inYUX852 > div > div.fd-tree__col.fd-tree__col--control > button").click();
+		}
+		
+		function click03() {
+			document.querySelector("#Bxd8s850 > div > div.fd-tree__col.fd-tree__col--control > button").click();
+		}
+		
+		function click04() {
+			document.querySelector("#Bxd8s850b > div > div.fd-tree__col.fd-tree__col--control > button").click();
+		}
+		
+		function click05() {
+			document.querySelector("#Bxd8s850bc > div > div.fd-tree__col.fd-tree__col--control > button").click();
+		}
+		
+		function updateInsightsAndSuggestions() {
+			
+			document.getElementById('insightsHere').innerHTML = ""
+			document.getElementById('initSentiment').innerHTML = loadingSpinner;
+			document.getElementById('suggestionHere').innerHTML = loadingSpinner;
+			setTimeout(delayedInsightsUpdate, 7500);
+
+		}
+		
+		function initUpdateInsightsAndSuggestions() {
+			
+			document.getElementById('insightsHere').innerHTML = ""
+			document.getElementById('initSentiment').innerHTML = loadingSpinner;
+			document.getElementById('suggestionHere').innerHTML = loadingSpinner;
+			document.getElementById('customerWriteUp').innerHTML = loadingSpinner;
+			setTimeout(initDelayedInsightsUpdate, 2300);
+
+		}
+		
+		function addCustomerWriteUp() {
+			document.getElementById('customerWriteUp').innerHTML = insightStrings[7];
+			
+		}
+		
+		function delayedInsightsUpdate() {
+			
+			var randomDelay = Math.floor((Math.random() * 1070) + 529);
+			
+			if (suggestionCount < suggestionStrings.length) {
+				document.getElementById('initSentiment').innerHTML = "";
+				previousInsights = previousInsights + insightStrings[suggestionCount];
+				document.getElementById('insightsHere').innerHTML = previousInsights
+				//The below funciton is called to add the customer write-up section into the Customer information tab
+				setTimeout(delayedSuggestionUpdate, randomDelay)
+			} else {
+				suggestionCount = 0;
+			}
+			
+		}
+		
+		function initDelayedInsightsUpdate() {
+			
+			var randomDelay = Math.floor((Math.random() * 1070) + 529);
+			
+			if (suggestionCount < suggestionStrings.length) {
+				document.getElementById('initSentiment').innerHTML = "";
+				previousInsights = previousInsights + insightStrings[suggestionCount];
+				document.getElementById('insightsHere').innerHTML = previousInsights
+				previousInsights = ""
+				addCustomerWriteUp();
+				setTimeout(delayedSuggestionUpdate, randomDelay)
+			} else {
+				suggestionCount = 0;
+			}
+			
+		}
+		
+				
+		//Run initial data update...
+		initUpdateInsightsAndSuggestions();
+		
+		function delayedSuggestionUpdate() {
+			
+			document.getElementById('suggestionHere').innerHTML = suggestionStrings[suggestionCount];
+			suggestionCount = suggestionCount + 1;
+			
+		}
+		
+		
+		//Trigger page update when message is sent with the Enter Key...
+		//Wait for load and then run below function to assign keypress event...
+		function addKeyPressEvent() {
+			
+			document.getElementsByClassName('RecastSendButton')[0].setAttribute("onclick", "updateInsightsAndSuggestions()");
+			
+			document.querySelector("#thatTextArea").addEventListener("keyup", function(event) {
+			  if (event.keyCode === 13) {
+			   event.preventDefault();
+			   //console.log("Sending...");
+			   updateInsightsAndSuggestions();
+			  }
+			});
+		}
+		
+		setTimeout(addKeyPressEvent, 3000)
+		
+		
+	</script>
+	
+	<script>
+		//sorting out the Tabbed content...
+		//setTimeout(removeAttributes, 500)
+
+		function removeAttributes() {
+			var tabCount = document.getElementsByClassName('fd-tabs__link').length
+			for (att = 1; att <= tabCount; att++) {
+				var tabSel = 'tab0' + att + 'content'
+				var tabNum = 'tab0' + att;
+				document.getElementById(tabSel).setAttribute("aria-expanded", "false");
+				document.getElementById(tabNum).setAttribute("aria-selected", "false");
+			}
+		}
+		
+		function selectTab(idForTab) {
+			
+			removeAttributes();
+			document.getElementById('tab0' + idForTab + 'content').setAttribute("aria-expanded", "true");
+			document.getElementById('tab0' + idForTab).setAttribute("aria-selected", "true");
+		}
+		
+	</script>
+      
+   </body>
+</html>

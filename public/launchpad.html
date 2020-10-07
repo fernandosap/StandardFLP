@@ -1,0 +1,258 @@
+<html lang="en" onclick="animateNotification()">
+   <head>
+      <meta charset="utf-8">
+      <title>UK&I Inno Labs</title>
+      <meta name="description" content="The SAP Mile Tracker">
+      <!-- Link below is for the Fiori Fundamentals stylesheet and javascript file -->
+      <link rel="stylesheet" type="text/css" href="css/fs.css">
+      <link rel="stylesheet" type="text/css" href="https://unpkg.com/fiori-fundamentals@1.6.0/dist/fiori-fundamentals.min.css">
+      <link rel="stylesheet" type="text/css" href="css/aaStyling.css">
+      <style>
+         @media print {
+         #ghostery-purple-box {
+         display: none !important
+         }
+         }
+      </style>
+   </head>
+   <body cz-shortcut-listen="true">
+      <!-- Start of Shellbar -->
+      <div class="fd-shellbar">
+         <div class="fd-shellbar__group fd-shellbar__group--start">
+            <a href="launchpad.html" class="fd-shellbar__logo"><img src="https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg.adapt.svg/1493030643828.svg" srcset="https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg.adapt.svg/1493030643828.svg" width="48" height="24" alt="SAP" /></a>
+            <div class="fd-shellbar__product">
+               <div class="fd-product-menu">
+                  <div class="fd-popover fd-popover--right">
+                     <div class="fd-popover__control">
+                        <button class="fd-product-menu__control" aria-controls="9GLB2694" aria-haspopup="true" aria-expanded="false">
+                        <span class="fd-shellbar__title fd-product-menu__title">Home</span>
+                        </button>
+                     </div>
+                     <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="9GLB2694">
+                        <nav class="fd-menu">
+                           <ul class="fd-menu__list">
+                              <li><a role="button" class="fd-menu__item" href="launchpad.html">Home</a></li>
+                              <!--<li><a role="button" class="fd-menu__item">Coming Soon...</a></li> -->
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="fd-shellbar__subtitle">
+               Launchpad
+            </div>
+            <div class="fd-shellbar__group fd-shellbar__group--end">
+               <div class="fd-shellbar__actions">
+                  <div class="fd-shellbar__group fd-shellbar__group--end">
+                     <div class="fd-shellbar__actions">
+                        <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+                           <div class="fd-search-input fd-search-input--closed">
+                              <div class="fd-popover">
+                                 <div class="fd-popover__control fd-search-input__control">
+                                    <button class="sap-icon--search fd-button--shell" aria-controls="WFm18647" aria-expanded="false" aria-haspopup="true"></button>
+                                    <div class="fd-search-input__closedcontrol" id="WFm18647" aria-hidden="true">
+                                       <div class="fd-search-input__controlinput" aria-controls="2tzvi768" aria-expanded="false" aria-haspopup="true">
+                                          <input type="text" class="fd-input " id="fXyFj568" placeholder="Search products" value="Search" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="fd-shellbar__action fd-shellbar__action--collapsible">
+                           <button class=" fd-button--shell sap-icon--bell aaShellbarSpacing" aria-label="Notifications">
+                           <span class="fd-counter fd-counter--notification" aria-label="Unread count" id="notiCount">3</span></button>
+                        </div>
+                        <div class="fd-shellbar__action fd-shellbar__action--collapse">
+                           <div class="fd-shellbar-collapse">
+                              <div class="fd-popover fd-popover--right">
+                                 <div class="fd-popover__control">
+                                    <div class="fd-shellbar-collapse--control" aria-controls="76dWJ632" aria-expanded="false" aria-haspopup="true" role="button">
+                                       <button class=" fd-button--shell sap-icon--overflow" aria-controls="undefined" aria-haspopup="true" aria-expanded="false">
+                                       <span class="fd-counter fd-counter--notification" aria-label="Unread count">3</span></button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        
+                        <div class="fd-popover fd-popover--right">
+		          	
+				            <div class="fd-popover__control">
+				            	
+				              <div class="fd-user-menu__control" aria-controls="ZY3AY277" aria-expanded="false" aria-haspopup="true" role="button">
+				                <span class="fd-identifier fd-identifier--xs fd-identifier--circle fd-identifier--thumbnail" style="background-image: url(img/headshot-male.jpg)" aria-label="William Wallingham">WW</span>
+				              </div>
+				            </div>
+				            <div class="fd-popover__body fd-popover__body--right" aria-hidden="true" id="ZY3AY277">
+				              <nav class="fd-menu">
+				                <ul class="fd-menu__list">
+				                  <li><a role="button" class="fd-menu__item">Settings</a></li>
+				                  <li><a role="button" class="fd-menu__item">Sign Out</a></li>
+				                </ul>
+				              </nav>
+				            </div>
+				          </div>
+				        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      <marquee class="aaMarquee" behavior="scroll" direction="left" scrollamount="6">No Network Incidents / 3 Pieces of Team News / 1 New Training Course</marquee>
+      
+      <!-- Start of Notification div content -->
+      <div class="fd-notification fd-notification--warning invis" id="customerServiceNotification">
+	    <div class="fd-notification__header">
+	        <div class="fd-notification__indicator--warning"></div>
+	        <div class="fd-notification__title">Urgent Customer Service Incident - Ticket #28902</div>
+	        <button class="fd-button--light sap-icon--decline fd-notification__close"></button>
+	    </div>
+	    <div class="fd-notification__body">
+	        <div class="fd-notification__content">
+	            <div class="fd-notification__avatar">
+	                <span class="fd-identifier fd-identifier--s fd-identifier--circle" aria-label="Wendy Wallace">DH</span>
+	            </div>
+	            <div class="fd-notification__text">
+	                <div class="fd-notification__description">
+	                    Key Customer <b>Dominic H</b> has broken down and is need of immediate support.
+	                </div>
+	                <div class="fd-notification__metadata">
+	                    Just Now
+	                </div>
+	            </div>
+	        </div>
+	        <div class="fd-notification__footer">
+	            <button class="fd-button--light">More Info</button>
+	            <div class="fd-notification__actions">
+	                <button class="fd-button" onclick="goToPrototype()">Go To Incident</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!-- End of Notification div content -->
+
+
+
+      <!-- Start of Main Container -->
+      <br>
+      <br>
+      <br>
+         
+      <h2 class="sectionTitles">Your Applications</h2>
+      <div class="fioriTileContainer">
+      	
+      	<div class="aaFioriTile" onclick="goToPrototype()">
+      		<div class="aaFioriTileTitle">Prototype Name</div>
+      		<div class="aaFioriTileSubtitle">Go To Application</div>
+      		<div class="aaFioriTileLogoWithKPI"><span class="sap-icon--customer-view sap-icon--xl" id="ticketCount">1</span></div>
+      		<div class="aaFioriTileContext">Form required</div>
+      	</div>
+      	
+      	<div class="aaFioriTile">
+      		<div class="aaFioriTileTitle">View Garage Schedule</div>
+      		<div class="aaFioriTileSubtitle">Check bookings</div>
+      		<div class="aaFioriTileLogo"><span class="sap-icon--date-time sap-icon--xl"></span></div>
+      		<div class="aaFioriTileContext"></div>
+      	</div>
+      	
+      	<div class="aaFioriTile">
+      		<div class="aaFioriTileTitle">Team Calendar</div>
+      		<div class="aaFioriTileSubtitle">Check bookings</div>
+      		<div class="aaFioriTileLogo"><span class="sap-icon--calendar sap-icon--xl"></span></div>
+      		<div class="aaFioriTileContext"></div>
+      	</div>
+      	
+      	<div class="aaFioriTile">
+      		<div class="aaFioriTileTitle">Customer Orders</div>
+      		<div class="aaFioriTileSubtitle">View and create orders</div>
+      		<div class="aaFioriTileLogo"><span class="sap-icon--sales-order sap-icon--xl"></span></div>
+      		<div class="aaFioriTileContext"></div>
+      	</div>
+      	
+      	<div class="aaFioriTile">
+      		<div class="aaFioriTileTitle">Customer Bookings</div>
+      		<div class="aaFioriTileSubtitle">View and create bookings</div>
+      		<div class="aaFioriTileLogo"><span class="sap-icon--course-book sap-icon--xl"></span></div>
+      		<div class="aaFioriTileContext"></div>
+      	</div>
+      
+      </div>
+      	
+      <h2 class="sectionTitles">Employee Applications</h2>
+      <div class="fioriTileContainer">	
+      	<div class="aaFioriTile">
+      		<div class="aaFioriTileTitle">Travel and Expenses</div>
+      		<div class="aaFioriTileSubtitle">Book travel</div>
+      		<div class="aaFioriTileLogo"><span class="sap-icon--travel-expense sap-icon--xl"></span></div>
+      		<div class="aaFioriTileContext"></div>
+      	</div>
+      	
+      	<div class="aaFioriTile">
+      		<div class="aaFioriTileTitle">Learning</div>
+      		<div class="aaFioriTileSubtitle">Take Courses</div>
+      		<div class="aaFioriTileLogoWithKPI"><span class="sap-icon--e-learning sap-icon--xl">2</span></div>
+      		<div class="aaFioriTileContext">Courses Available</div>
+      	</div>
+      	
+      	<div class="aaFioriTile">
+      		<div class="aaFioriTileTitle">Leave Requests</div>
+      		<div class="aaFioriTileSubtitle">Book Days off</div>
+      		<div class="aaFioriTileLogo"><span class="sap-icon--create-leave-request sap-icon--xl"></span></div>
+      		<div class="aaFioriTileContext"></div>
+      	</div>
+      	
+      	<div class="aaFioriTile">
+      		<div class="aaFioriTileTitle">Guided Buying</div>
+      		<div class="aaFioriTileSubtitle">Purchase Equipment</div>
+      		<div class="aaFioriTileLogo"><span class="sap-icon--cart-5 sap-icon--xl"></span></div>
+      		<div class="aaFioriTileContext"></div>
+      	</div>
+      	
+      	<div class="aaFioriTile">
+      		<div class="aaFioriTileTitle">Unified Ticketing</div>
+      		<div class="aaFioriTileSubtitle">Your requests</div>
+      		<div class="aaFioriTileLogoWithKPI"><span class="sap-icon--travel-request sap-icon--xl">2</span></div>
+      		<div class="aaFioriTileContext">Tickets Open</div>
+      	</div>
+      	
+       
+      </div>
+      <!-- End of Main Container -->
+      
+      <script></script>
+      
+      <script src="js/fioriFundamentals.js"></script>
+      
+      	<script>
+      	// ...com/keynote-dashboard-aaron.html
+		
+		function animateNotification() {
+			//document.getElementById('customerServiceNotification').classList.remove("invis");
+			//document.getElementById('customerServiceNotification').classList.add("aaNotificationFloat");
+			//document.getElementById('goodMorningText').classList.add("fadeaway");
+			//setTimeout(increaseNotificationCount, 2000)
+		}
+		
+		function increaseNotificationCount() {
+			document.getElementById('notiCount').innerHTML = 4
+			document.getElementById('ticketCount').innerHTML = 4
+		}
+		
+		function goToPrototype() {
+			window.location.replace('prototype.html')
+		}
+		
+	</script>
+	
+	<script>
+
+	</script>
+      
+   </body>
+</html>

@@ -1,0 +1,9 @@
+---
+applications:
+- name: PnTPedia
+  memory: 256M
+  instances: 1
+  disk_quota: 256M
+  command: node 'PNTPedia.js'
+  buildpacks: 
+      - nodejs_buildpack
